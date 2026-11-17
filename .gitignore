@@ -1,0 +1,82 @@
+# Dependencies (keep package.json and lockfiles committed)
+node_modules/
+
+# Expo and generated web output
+.expo/
+/dist/
+/web-build/
+expo-env.d.ts
+
+# Generated native projects (Expo Continuous Native Generation)
+/ios/
+/android/
+.kotlin/
+
+# Environment files (templates must contain placeholders only)
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Credentials, private keys and signing files
+/.aws/
+credentials.json
+*.keystore
+*.jks
+*.p8
+*.p12
+*.pfx
+*.key
+*.pem
+*.mobileprovision
+*.provisionprofile
+service-account*.json
+serviceAccount*.json
+*-firebase-adminsdk-*.json
+.npmrc.local
+
+# Metro and tool caches
+.metro-health-check*
+.cache/
+.eslintcache
+*.tsbuildinfo
+
+# Test and coverage output
+/coverage/
+.nyc_output/
+
+# Logs and crash dumps
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+pnpm-debug.*
+*.hprof
+
+# Local design output, temporary files and bundled agent skills
+/output/
+/.tmp/
+/.agents/skills/
+/.taste-skill/
+
+# Local agent settings (keep AGENTS.md and .agents/roles/ committed)
+/.claude/settings.json
+/.claude/settings.local.json
+/.claude/worktrees/
+/.codex/
+
+# Editor and merge temporary files
+*.swp
+*.swo
+*~
+*.orig
+*.orig.*
+*.rej
+
+# Operating-system metadata
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+desktop.ini
+$RECYCLE.BIN/
