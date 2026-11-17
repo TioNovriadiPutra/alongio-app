@@ -4,7 +4,7 @@
   <h1>Alongio</h1>
 
   <p><strong>Your day. Your way. Better together.</strong></p>
-  <p>Teman kecil untuk mengingat hal sehari-hari, membangun rutinitas, dan saling memberi perhatian.</p>
+  <p>Teman buat menjalani hari, menjaga rutinitas, dan saling ingetin hal kecil.</p>
 
   <p>
     <a href="#preview-desain">Preview</a> ·
@@ -20,29 +20,53 @@
 
 ## Tentang Alongio
 
-Alongio adalah aplikasi lifestyle untuk individu dan pasangan, dibangun dengan **React Native, Expo, dan TypeScript**. Idenya berangkat dari hal sederhana: pengingat membeli susu, rutinitas kecil yang ingin dijaga, dan perhatian kepada pasangan seharusnya terasa ringan untuk dilakukan.
+Alongio adalah aplikasi lifestyle untuk dipakai sendiri atau bareng pasangan, dibangun dengan React Native, Expo, dan TypeScript. Idenya dekat dengan keseharian: ingat beli susu, tetap jalanin rutinitas, atau bantu pasangan mengingat sesuatu di tengah hari yang sibuk.
 
-Pengalaman produknya dirancang tetap berguna saat digunakan sendiri, dengan ruang untuk berbagi bersama pasangan. Warna pastel, maskot pixel, dan bahasa yang personal menjadi bagian dari identitasnya.
+Nggak harus punya pasangan untuk pakai Alongio. Penggunaan personal tetap jadi bagian dari desainnya, dengan pilihan ruang bersama untuk pasangan. Warna pastel, maskot pixel, dan bahasa yang akrab menjaga tampilannya tetap playful.
 
-Sebagai proyek portfolio, Alongio menjadi tempat untuk mengeksplorasi **desain produk, alur mobile, komponen reusable, pengelolaan form, navigasi, dan animasi antarmuka** dari desain hingga implementasi.
+Saya mengembangkan Alongio sebagai proyek portfolio, mulai dari desain produk sampai implementasi mobile. Di sini saya mengerjakan alur pengguna, komponen reusable, pengelolaan form, navigasi, dan animasi antarmuka.
 
-> **Status saat ini:** prototype frontend dengan data contoh lokal. Backend, autentikasi sungguhan, sinkronisasi pasangan, penyimpanan reminder, dan pengiriman notifikasi belum terintegrasi. Preview di bawah merupakan desain produk; sebagian tampilannya masih dalam proses implementasi.
+> Alongio masih berupa prototype frontend dengan data contoh lokal. Backend, autentikasi sungguhan, sinkronisasi pasangan, penyimpanan reminder, dan pengiriman notifikasi belum terintegrasi. Preview di bawah menampilkan desain produk yang sebagian masih saya implementasikan.
 
 ## Preview desain
 
-### Tiny Planner — pengingat dan rutinitas punya tempatnya sendiri
+### Satu aplikasi untuk beberapa bagian keseharian
+
+<table>
+  <tr>
+    <th>Home</th>
+    <th>Little Kitchen</th>
+    <th>Money Garden</th>
+    <th>Me &amp; Spaces</th>
+  </tr>
+  <tr>
+    <td><a href="docs/images/home-design.png"><img src="docs/images/home-design.png" alt="Desain Home Alongio dengan enam kartu fitur dan pilihan personal space" width="190" /></a></td>
+    <td><a href="docs/images/little-kitchen-design.png"><img src="docs/images/little-kitchen-design.png" alt="Desain Little Kitchen dengan bahan di pantry, ide resep, dan daftar belanja" width="190" /></a></td>
+    <td><a href="docs/images/money-garden-design.png"><img src="docs/images/money-garden-design.png" alt="Desain Money Garden dengan ringkasan budget, transaksi, dan target tabungan" width="190" /></a></td>
+    <td><a href="docs/images/profile-design.png"><img src="docs/images/profile-design.png" alt="Desain profil dengan personal space, couple space, dan apresiasi small wins" width="190" /></a></td>
+  </tr>
+</table>
+
+Dari Home, pengguna bisa membuka fitur-fitur Alongio. Little Kitchen dirancang untuk mencari ide masak dari bahan yang ada. Money Garden menampilkan budget dan target tabungan, sementara Me & Spaces memuat profil serta ruang personal dan pasangan. Klik gambar untuk melihat ukuran penuh.
+
+*Little Kitchen dan Money Garden masih di tahap desain. Home dan profil sudah punya prototype UI. Detail fitur yang sudah bisa dicoba ada di [status pengembangan](#status-pengembangan).*
+
+### Tiny Planner: reminder harian dan rutinitas
 
 ![Desain Tiny Planner: reminder belum selesai, reminder dicentang, dan progres rutinitas](docs/images/tiny-planner-design.png)
 
-**Today** menampung reminder sekali jalan, seperti membeli susu atau mengambil paket. **Routines** dirancang untuk aktivitas berulang dengan progres harian dan apresiasi ketika rutinitas hari itu selesai. Menyelesaikan reminder tidak menambah progres rutinitas.
+Lupa beli susu atau perlu ambil paket? Reminder sekali jalan seperti ini masuk ke Today. Untuk kebiasaan yang diulang, Routines dirancang dengan progres harian dan apresiasi setelah semua rutinitas hari itu selesai. Centang reminder di Today tidak menambah progres Routines.
 
-### Pilih penerima tanpa membuat form terasa penuh
+<details>
+<summary>Pilih siapa yang mau diingetin</summary>
 
 ![Desain form reminder dan bottom sheet pemilihan penerima dengan avatar](docs/images/reminder-recipient-design.png)
 
-Field **For** membuka bottom sheet untuk memilih diri sendiri, pasangan, atau keduanya. Nama, avatar, dan deskripsi singkat membantu menjelaskan pilihan tanpa mengandalkan warna saja.
+Lewat field For, pengguna bisa membuka bottom sheet lalu memilih diri sendiri, pasangan, atau keduanya. Tiap pilihan punya nama, avatar, dan deskripsi singkat, jadi penerimanya tetap jelas tanpa harus menebak dari warna.
 
-*Kedua gambar merupakan ekspor desain FigCraft, bukan screenshot aplikasi yang sudah dirilis.*
+</details>
+
+*Semua preview diekspor dari desain FigCraft. Aplikasinya belum dirilis.*
 
 ## Keputusan produk dan UI
 
@@ -68,7 +92,7 @@ Field **For** membuka bottom sheet untuk memilih diri sendiri, pasangan, atau ke
 | Tiny Planner: Routines | Alur progres, penyelesaian, undo, dan apresiasi | Tersedia di desain FigCraft; belum diimplementasikan di aplikasi |
 | Backend dan notifikasi | Akun, persistensi, sinkronisasi, dan pengiriman pengingat | Direncanakan |
 
-Beberapa kontrol masih berupa tampilan atau menggunakan data statis. Checkbox pada daftar saat ini menampilkan status dari data contoh; perubahan status belum disambungkan ke penyimpanan. Aplikasi juga belum memiliki rilis APK atau tautan App Store yang disertakan di repository ini.
+Beberapa kontrol masih menampilkan data statis. Checkbox pada daftar mengikuti status dari data contoh dan belum menyimpan perubahan. Repository ini juga belum menyertakan rilis APK atau tautan App Store.
 
 ## Teknologi
 
@@ -85,7 +109,7 @@ Beberapa kontrol masih berupa tampilan atau menggunakan data statis. Checkbox pa
 | **Iconsax / React Native SVG** | Ikon yang konsisten dengan desain |
 | **FigCraft** | Desain layar, state, dan prototype interaksi |
 
-Versi dependency lengkap tersedia di [`package.json`](package.json).
+Versi lengkap dependency bisa dilihat di [`package.json`](package.json).
 
 ## Menjalankan proyek
 
@@ -104,7 +128,7 @@ npm ci
 npm start
 ```
 
-Scan QR code dari development server menggunakan Expo Go yang kompatibel. Untuk perangkat fisik, hubungkan komputer dan ponsel ke jaringan yang sama.
+Scan QR code dari development server lewat Expo Go yang kompatibel. Kalau memakai ponsel fisik, pastikan komputer dan ponsel terhubung ke jaringan yang sama.
 
 | Perintah | Kegunaan |
 | --- | --- |
@@ -113,9 +137,9 @@ Scan QR code dari development server menggunakan Expo Go yang kompatibel. Untuk 
 | `npm run ios` | Menjalankan development server dan membuka iOS Simulator pada macOS |
 | `npx tsc --noEmit` | Memeriksa tipe TypeScript tanpa menghasilkan file build |
 
-Prototype saat ini tidak memerlukan konfigurasi backend atau file `.env`. Entry point di [`App.tsx`](App.tsx) membuka `AppRoute` langsung; layar autentikasi sudah tersedia dalam `AuthRoute`, tetapi belum menjadi alur awal aplikasi.
+Prototype ini bisa dijalankan tanpa konfigurasi backend atau file `.env`. Entry point di [`App.tsx`](App.tsx) langsung membuka `AppRoute`. Layar autentikasi ada di `AuthRoute`, tetapi belum dipakai sebagai alur awal aplikasi.
 
-Mulai eksplorasi dari **Home → Tiny Planner → Add reminder**. Fitur di luar Tiny Planner masih dalam pengembangan; beberapa tujuan pada kartu menu belum memiliki screen yang terdaftar.
+Untuk mencoba alur yang sedang dikerjakan, buka Home → Tiny Planner → Add reminder. Fitur di luar Tiny Planner masih dikembangkan, jadi beberapa kartu menu belum punya screen tujuan yang terdaftar.
 
 Panduan menjalankan development server: [dokumentasi Expo](https://docs.expo.dev/get-started/start-developing/).
 
@@ -143,7 +167,7 @@ alongio-app/
     └── routes/             # App route dan auth route
 ```
 
-Struktur di atas mengikuti implementasi yang ada. Layer backend dan server state dalam dokumen arsitektur merupakan arah pengembangan berikutnya, bukan integrasi yang sudah tersedia.
+Struktur ini mengikuti isi proyek saat ini. Layer backend dan server state yang dibahas dalam dokumen arsitektur masih berupa rencana pengembangan.
 
 ## Roadmap
 
@@ -155,23 +179,29 @@ Struktur di atas mengikuti implementasi yang ada. Layer backend dan server state
 - [ ] Mengintegrasikan notifikasi dan pengingat pasangan.
 - [ ] Memvalidasi aksesibilitas, layout perangkat kecil, dan perilaku Android/iOS.
 
-Konsep fitur lain dalam visi Alongio mencakup **Little Kitchen**, **Money Garden**, **Heart Diary**, **Playroom**, dan **Buddy AI**. Kartu-kartunya sudah menjadi bagian dari arah visual produk, tetapi modul tersebut belum tersedia sebagai fitur aplikasi yang lengkap. Detail cakupannya ada di [dokumen MVP](docs/mvp.md).
+Alongio juga punya konsep Little Kitchen, Money Garden, Heart Diary, Playroom, dan Buddy AI. Kartu fiturnya sudah masuk ke desain, sementara implementasi modulnya belum lengkap. Cakupan masing-masing fitur ada di [dokumen MVP](docs/mvp.md).
 
 ## Dokumentasi
 
 - [Visi produk dan cakupan MVP](docs/mvp.md)
 - [Arah arsitektur proyek](docs/architecture.md)
+- [Galeri Home, Little Kitchen, Money Garden, dan profil](#satu-aplikasi-untuk-beberapa-bagian-keseharian)
 - [Preview desain Tiny Planner](docs/images/tiny-planner-design.png)
 - [Preview pemilihan penerima reminder](docs/images/reminder-recipient-design.png)
 
-Dokumen FigCraft yang editable disimpan secara lokal di `output/` dan tidak disertakan dalam repository publik. Preview PNG di dokumentasi dapat dilihat langsung melalui GitHub.
+File FigCraft yang bisa diedit disimpan lokal di `output/` dan tidak masuk ke repository publik. Preview PNG tetap bisa dilihat langsung di GitHub.
 
 ## Pengembang
 
-Proyek personal oleh **[TioNovriadiPutra](https://github.com/TioNovriadiPutra)** sebagai eksplorasi pengembangan produk mobile dan implementasi UI dengan React Native.
+Dibuat oleh [TioNovriadiPutra](https://github.com/TioNovriadiPutra) sebagai proyek personal untuk mengeksplorasi pengembangan produk mobile dan implementasi UI dengan React Native.
 
-Masukan tentang pengalaman pengguna, desain interaksi, dan implementasi mobile dapat disampaikan melalui [GitHub Issues](https://github.com/TioNovriadiPutra/alongio-app/issues).
+Punya masukan soal pengalaman pengguna, interaksi, atau implementasi mobile? Diskusikan lewat [GitHub Issues](https://github.com/TioNovriadiPutra/alongio-app/issues).
+
+Untuk ngobrol soal proyek ini atau peluang kolaborasi, hubungi saya lewat:
+
+- Instagram: [@tio_novriadi](https://www.instagram.com/tio_novriadi/)
+- Email: [tionvriadi@gmail.com](mailto:tionvriadi@gmail.com)
 
 ## Lisensi
 
-Repository ini menyertakan [MIT License](LICENSE). Lihat file tersebut untuk ketentuan dan atribusi yang berlaku.
+Repository ini menyertakan [MIT License](LICENSE). Ketentuan penggunaan dan atribusinya ada di file tersebut.
