@@ -197,6 +197,11 @@ Dibuat oleh [TioNovriadiPutra](https://github.com/TioNovriadiPutra) sebagai proy
 
 Punya masukan soal pengalaman pengguna, interaksi, atau implementasi mobile? Diskusikan lewat [GitHub Issues](https://github.com/TioNovriadiPutra/alongio-app/issues).
 
+Untuk ngobrol soal proyek ini atau peluang kolaborasi, hubungi saya lewat:
+
+- Instagram: [@tio_novriadi](https://www.instagram.com/tio_novriadi/)
+- Email: [tionvriadi@gmail.com](mailto:tionvriadi@gmail.com)
+
 ## Lisensi
 
 Repository ini menyertakan [MIT License](LICENSE). Ketentuan penggunaan dan atribusinya ada di file tersebut.
