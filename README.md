@@ -1,36 +1,40 @@
 <div align="center">
-  <img src="assets/images/bird.webp" alt="Maskot pixel Alongio" width="88" />
+  <img src="assets/images/bird.webp" alt="Alongio's pixel mascot" width="88" />
 
   <h1>Alongio</h1>
 
   <p><strong>Your day. Your way. Better together.</strong></p>
-  <p>Teman buat menjalani hari, menjaga rutinitas, dan saling ingetin hal kecil.</p>
+  <p>A little companion for daily routines, everyday reminders, and checking in on your person.</p>
 
   <p>
     <a href="#preview-desain">Preview</a> ·
     <a href="#status-pengembangan">Status</a> ·
-    <a href="#teknologi">Teknologi</a> ·
-    <a href="#menjalankan-proyek">Jalankan proyek</a>
+    <a href="#teknologi">Tech stack</a> ·
+    <a href="#menjalankan-proyek">Run locally</a>
   </p>
 
-  <p><strong>Personal project · Mobile app · Sedang dikembangkan</strong></p>
+  <p><strong>Personal project · Mobile app · Work in progress</strong></p>
 </div>
 
 ---
 
-## Tentang Alongio
+## About Alongio
 
-Alongio adalah aplikasi lifestyle untuk dipakai sendiri atau bareng pasangan, dibangun dengan React Native, Expo, dan TypeScript. Idenya dekat dengan keseharian: ingat beli susu, tetap jalanin rutinitas, atau bantu pasangan mengingat sesuatu di tengah hari yang sibuk.
+Alongio is a lifestyle app for solo use or life with a partner, built with React Native, Expo, and TypeScript. It's designed around everyday things: remembering to buy milk, sticking with a routine, or giving your person a heads-up during a busy day.
 
-Nggak harus punya pasangan untuk pakai Alongio. Penggunaan personal tetap jadi bagian dari desainnya, dengan pilihan ruang bersama untuk pasangan. Warna pastel, maskot pixel, dan bahasa yang akrab menjaga tampilannya tetap playful.
+Solo use is part of the design from the start, with shared spaces planned for couples. Pastel colors, a pixel mascot, and friendly copy keep the experience playful.
 
-Saya mengembangkan Alongio sebagai proyek portfolio, mulai dari desain produk sampai implementasi mobile. Di sini saya mengerjakan alur pengguna, komponen reusable, pengelolaan form, navigasi, dan animasi antarmuka.
+I'm building Alongio as a portfolio project, from product design through mobile implementation. It gives me room to work on user flows, reusable components, forms, navigation, and UI animation in the same product.
 
-> Alongio masih berupa prototype frontend dengan data contoh lokal. Backend, autentikasi sungguhan, sinkronisasi pasangan, penyimpanan reminder, dan pengiriman notifikasi belum terintegrasi. Preview di bawah menampilkan desain produk yang sebagian masih saya implementasikan.
+> Alongio is currently a frontend prototype with local sample data. Backend services, real authentication, partner sync, reminder storage, and notification delivery aren't connected yet. The previews below show product designs that I'm still bringing into the app.
 
-## Preview desain
+<a id="preview-desain"></a>
 
-### Satu aplikasi untuk beberapa bagian keseharian
+## Design previews
+
+<a id="satu-aplikasi-untuk-beberapa-bagian-keseharian"></a>
+
+### A few corners of everyday life
 
 <table>
   <tr>
@@ -40,86 +44,92 @@ Saya mengembangkan Alongio sebagai proyek portfolio, mulai dari desain produk sa
     <th>Me &amp; Spaces</th>
   </tr>
   <tr>
-    <td><a href="docs/images/home-design.png"><img src="docs/images/home-design.png" alt="Desain Home Alongio dengan enam kartu fitur dan pilihan personal space" width="190" /></a></td>
-    <td><a href="docs/images/little-kitchen-design.png"><img src="docs/images/little-kitchen-design.png" alt="Desain Little Kitchen dengan bahan di pantry, ide resep, dan daftar belanja" width="190" /></a></td>
-    <td><a href="docs/images/money-garden-design.png"><img src="docs/images/money-garden-design.png" alt="Desain Money Garden dengan ringkasan budget, transaksi, dan target tabungan" width="190" /></a></td>
-    <td><a href="docs/images/profile-design.png"><img src="docs/images/profile-design.png" alt="Desain profil dengan personal space, couple space, dan apresiasi small wins" width="190" /></a></td>
+    <td><a href="docs/images/home-design.png"><img src="docs/images/home-design.png" alt="Alongio Home design with six feature cards and a personal space selector" width="190" /></a></td>
+    <td><a href="docs/images/little-kitchen-design.png"><img src="docs/images/little-kitchen-design.png" alt="Little Kitchen design with pantry ingredients, recipe ideas, and a shopping list" width="190" /></a></td>
+    <td><a href="docs/images/money-garden-design.png"><img src="docs/images/money-garden-design.png" alt="Money Garden design with a budget summary, transactions, and savings goals" width="190" /></a></td>
+    <td><a href="docs/images/profile-design.png"><img src="docs/images/profile-design.png" alt="Profile design with personal and couple spaces and small-win celebrations" width="190" /></a></td>
   </tr>
 </table>
 
-Dari Home, pengguna bisa membuka fitur-fitur Alongio. Little Kitchen dirancang untuk mencari ide masak dari bahan yang ada. Money Garden menampilkan budget dan target tabungan, sementara Me & Spaces memuat profil serta ruang personal dan pasangan. Klik gambar untuk melihat ukuran penuh.
+Home is the starting point for Alongio's features. Little Kitchen is designed around meal ideas using ingredients you already have. Money Garden visualizes budgets and savings goals, while Me & Spaces holds your profile and personal or shared spaces. Click any image for the full-size preview.
 
-*Little Kitchen dan Money Garden masih di tahap desain. Home dan profil sudah punya prototype UI. Detail fitur yang sudah bisa dicoba ada di [status pengembangan](#status-pengembangan).*
+*Little Kitchen and Money Garden are still at the design stage. Home and the profile already have UI prototypes. See [development status](#status-pengembangan) for what's available to try.*
 
-### Tiny Planner: reminder harian dan rutinitas
+### Tiny Planner: daily reminders and routines
 
-![Desain Tiny Planner: reminder belum selesai, reminder dicentang, dan progres rutinitas](docs/images/tiny-planner-design.png)
+![Tiny Planner designs showing an unfinished reminder, a checked reminder, and routine progress](docs/images/tiny-planner-design.png)
 
-Lupa beli susu atau perlu ambil paket? Reminder sekali jalan seperti ini masuk ke Today. Untuk kebiasaan yang diulang, Routines dirancang dengan progres harian dan apresiasi setelah semua rutinitas hari itu selesai. Centang reminder di Today tidak menambah progres Routines.
+Need to buy milk or pick up a package? One-time reminders like these go in Today. Routines is designed for recurring habits, with daily progress and a little celebration when everything for the day is done. Checking off a reminder in Today doesn't add to routine progress.
 
 <details>
-<summary>Pilih siapa yang mau diingetin</summary>
+<summary>Choose who gets the reminder</summary>
 
-![Desain form reminder dan bottom sheet pemilihan penerima dengan avatar](docs/images/reminder-recipient-design.png)
+![Reminder form and recipient selection bottom sheet with avatars](docs/images/reminder-recipient-design.png)
 
-Lewat field For, pengguna bisa membuka bottom sheet lalu memilih diri sendiri, pasangan, atau keduanya. Tiap pilihan punya nama, avatar, dan deskripsi singkat, jadi penerimanya tetap jelas tanpa harus menebak dari warna.
+The For field opens a bottom sheet where you can choose yourself, your partner, or both. Each option includes a name, avatar, and short description, so you can tell who it's for without relying on color.
 
 </details>
 
-*Semua preview diekspor dari desain FigCraft. Aplikasinya belum dirilis.*
+*All previews are exported from the FigCraft design. The app hasn't been released yet.*
 
-## Keputusan produk dan UI
+## Product and UI decisions
 
-| Kebutuhan | Pendekatan desain |
+| Need | Design choice |
 | --- | --- |
-| Membedakan aktivitas mendadak dan kebiasaan | Memisahkan **Today** untuk reminder dan **Routines** untuk aktivitas berulang. |
-| Memahami jadwal milik siapa | Menampilkan avatar dan nama pada kartu, tanpa menambah tab pemilik. |
-| Mengurangi kepadatan form | Memindahkan pilihan penerima ke satu field dengan bottom sheet. |
-| Membuat status selesai mudah dikenali | Menggunakan centang, judul dicoret, dan keterangan **Done**. |
-| Memberi dorongan untuk menjaga rutinitas | Menampilkan progres pribadi dan apresiasi setelah rutinitas hari itu tuntas. |
-| Tetap berguna tanpa pasangan | Menjadikan penggunaan personal sebagai bagian dari konsep produk. |
+| Keep one-off tasks separate from habits | Today holds reminders; Routines holds recurring activities. |
+| Show whose schedule an item belongs to | Names and avatars appear on cards, without extra owner tabs. |
+| Keep the form compact | A single recipient field opens a bottom sheet. |
+| Make completion easy to recognize | A checkmark, strikethrough title, and Done label show the completed state. |
+| Encourage people to keep up with routines | Personal progress and a celebration mark the day's completed routines. |
+| Support solo use | Personal use is part of the product concept. |
 
-## Status pengembangan
+<a id="status-pengembangan"></a>
 
-| Area | Yang tersedia sekarang | Status |
+## Development status
+
+| Area | What's available now | Status |
 | --- | --- | --- |
-| Home | Sapaan, ilustrasi, kartu fitur, dan tampilan ruang personal | Prototype UI |
-| Profil | Tampilan profil dan personal space dengan data contoh | Prototype UI |
-| Navigasi | Stack navigation dan bottom tab custom | Diimplementasikan untuk layar yang sudah terdaftar |
-| Autentikasi | Layar greeting, register, login, dan verifikasi; validasi form registrasi | UI tersedia, belum terhubung backend |
-| Tiny Planner: Today | Daftar reminder contoh, tanggal relatif, dan tampilan status selesai | Prototype UI dengan data lokal |
-| Form reminder | Input nama reminder dan pilihan penerima menggunakan React Hook Form | Implementasi awal; belum menyimpan reminder |
-| Tiny Planner: Routines | Alur progres, penyelesaian, undo, dan apresiasi | Tersedia di desain FigCraft; belum diimplementasikan di aplikasi |
-| Backend dan notifikasi | Akun, persistensi, sinkronisasi, dan pengiriman pengingat | Direncanakan |
+| Home | Greeting, illustration, feature cards, and a personal space view | UI prototype |
+| Profile | Profile and personal space views with sample data | UI prototype |
+| Navigation | Stack navigation and custom bottom tabs | Implemented for registered screens |
+| Authentication | Greeting, registration, login, and verification screens; registration form validation | UI available; backend not connected |
+| Tiny Planner: Today | Sample reminders, relative dates, and completed states | UI prototype with local data |
+| Reminder form | Reminder name and recipient fields using React Hook Form | Early implementation; reminders aren't saved yet |
+| Tiny Planner: Routines | Progress, completion, undo, and celebration flows | Available in FigCraft; not implemented in the app yet |
+| Backend and notifications | Accounts, persistence, sync, and reminder delivery | Planned |
 
-Beberapa kontrol masih menampilkan data statis. Checkbox pada daftar mengikuti status dari data contoh dan belum menyimpan perubahan. Repository ini juga belum menyertakan rilis APK atau tautan App Store.
+Some controls still display static data. List checkboxes reflect the sample data and don't save changes yet. This repository doesn't include an APK release or an App Store link.
 
-## Teknologi
+<a id="teknologi"></a>
 
-| Teknologi | Penggunaan |
+## Tech stack
+
+| Technology | Used for |
 | --- | --- |
-| **Expo SDK 58** | Tooling dan workflow pengembangan mobile |
-| **React Native 0.88 / React 19** | Antarmuka aplikasi |
-| **TypeScript** | Tipe komponen, data, dan navigasi |
-| **React Navigation 7** | Native stack dan bottom tabs |
-| **React Hook Form 7** | Kontrol input dan validasi form |
-| **React Native Reanimated 4 / Worklets** | Animasi tab dan interaksi antarmuka |
-| **date-fns 4** | Format tanggal dan waktu reminder |
-| **Expo Image / Expo Font** | Aset WebP dan font Nunito Sans |
-| **Iconsax / React Native SVG** | Ikon yang konsisten dengan desain |
-| **FigCraft** | Desain layar, state, dan prototype interaksi |
+| Expo SDK 58 | Mobile development tooling and workflow |
+| React Native 0.88 / React 19 | App UI |
+| TypeScript | Component, data, and navigation types |
+| React Navigation 7 | Native stack and bottom tabs |
+| React Hook Form 7 | Form inputs and validation |
+| React Native Reanimated 4 / Worklets | Tab animations and UI interactions |
+| date-fns 4 | Reminder date and time formatting |
+| Expo Image / Expo Font | WebP assets and the Nunito Sans font |
+| Iconsax / React Native SVG | Icons consistent with the design |
+| FigCraft | Screen design, UI states, and interaction prototypes |
 
-Versi lengkap dependency bisa dilihat di [`package.json`](package.json).
+Full dependency versions are listed in [`package.json`](package.json).
 
-## Menjalankan proyek
+<a id="menjalankan-proyek"></a>
 
-### Prasyarat
+## Run locally
 
-- Node.js **22.x, minimal 22.13.0**, dan npm.
-- Expo Go yang kompatibel dengan SDK proyek, atau lingkungan development build yang sesuai.
-- Perangkat Android/iOS atau emulator. iOS Simulator memerlukan macOS.
+### Prerequisites
 
-### Instalasi
+- Node.js **22.x, at least 22.13.0**, and npm.
+- Expo Go compatible with the project's SDK, or a suitable development build setup.
+- An Android/iOS device or emulator. The iOS Simulator requires macOS.
+
+### Installation
 
 ```bash
 git clone https://github.com/TioNovriadiPutra/alongio-app.git
@@ -128,80 +138,80 @@ npm ci
 npm start
 ```
 
-Scan QR code dari development server lewat Expo Go yang kompatibel. Kalau memakai ponsel fisik, pastikan komputer dan ponsel terhubung ke jaringan yang sama.
+Scan the development server's QR code with a compatible version of Expo Go. If you're using a physical phone, connect it to the same network as your computer.
 
-| Perintah | Kegunaan |
+| Command | What it does |
 | --- | --- |
-| `npm start` | Menjalankan Expo development server |
-| `npm run android` | Menjalankan development server dan membuka target Android |
-| `npm run ios` | Menjalankan development server dan membuka iOS Simulator pada macOS |
-| `npx tsc --noEmit` | Memeriksa tipe TypeScript tanpa menghasilkan file build |
+| `npm start` | Starts the Expo development server |
+| `npm run android` | Starts the development server and opens the Android target |
+| `npm run ios` | Starts the development server and opens the iOS Simulator on macOS |
+| `npx tsc --noEmit` | Checks TypeScript types without generating build files |
 
-Prototype ini bisa dijalankan tanpa konfigurasi backend atau file `.env`. Entry point di [`App.tsx`](App.tsx) langsung membuka `AppRoute`. Layar autentikasi ada di `AuthRoute`, tetapi belum dipakai sebagai alur awal aplikasi.
+The prototype runs without backend configuration or a `.env` file. The entry point in [`App.tsx`](App.tsx) opens `AppRoute` directly. Authentication screens exist in `AuthRoute`, but aren't part of the startup flow yet.
 
-Untuk mencoba alur yang sedang dikerjakan, buka Home → Tiny Planner → Add reminder. Fitur di luar Tiny Planner masih dikembangkan, jadi beberapa kartu menu belum punya screen tujuan yang terdaftar.
+To try the flow I'm working on, open Home → Tiny Planner → Add reminder. Features outside Tiny Planner are still in development, so some menu cards don't have registered destination screens yet.
 
-Panduan menjalankan development server: [dokumentasi Expo](https://docs.expo.dev/get-started/start-developing/).
+For more on the development server, see the [Expo documentation](https://docs.expo.dev/get-started/start-developing/).
 
-## Struktur proyek
+## Project structure
 
 ```text
 alongio-app/
-├── App.tsx                 # Entry aplikasi, font, dan navigation container
+├── App.tsx                 # App entry point, fonts, and navigation container
 ├── assets/
 │   ├── fonts/              # Nunito Sans
-│   └── images/             # Ilustrasi, avatar, dan ikon fitur
+│   └── images/             # Illustrations, avatars, and feature icons
 ├── docs/
-│   ├── architecture.md     # Arah arsitektur dan tanggung jawab layer
-│   ├── mvp.md              # Visi produk dan cakupan MVP
-│   └── images/             # Preview desain untuk dokumentasi
+│   ├── architecture.md     # Architecture direction and layer responsibilities
+│   ├── mvp.md              # Product vision and MVP scope
+│   └── images/             # Design previews for documentation
 └── src/
     ├── components/
-    │   ├── custom/         # Komponen khusus fitur
-    │   └── shared/         # Input, button, checkbox, dan komponen bersama
-    ├── interfaces/         # Tipe data yang digunakan aplikasi
-    ├── lib/                # Helper, data contoh, dan definisi navigasi
+    │   ├── custom/         # Feature-specific components
+    │   └── shared/         # Inputs, buttons, checkboxes, and shared components
+    ├── interfaces/         # App data types
+    ├── lib/                # Helpers, sample data, and navigation definitions
     ├── pages/
-    │   ├── app/            # Home, profil, dan Tiny Planner
-    │   └── auth/           # Greeting, register, login, dan verifikasi
-    └── routes/             # App route dan auth route
+    │   ├── app/            # Home, profile, and Tiny Planner
+    │   └── auth/           # Greeting, registration, login, and verification
+    └── routes/             # App and auth routes
 ```
 
-Struktur ini mengikuti isi proyek saat ini. Layer backend dan server state yang dibahas dalam dokumen arsitektur masih berupa rencana pengembangan.
+This structure reflects the current project. The backend and server state layers discussed in the architecture document are still planned.
 
 ## Roadmap
 
-- [ ] Menyelesaikan pembuatan, perubahan, dan penghapusan reminder.
-- [ ] Menyimpan status selesai dan menjaga data setelah aplikasi dibuka ulang.
-- [ ] Mengimplementasikan jadwal berulang, progres Routines, dan apresiasi harian.
-- [ ] Menghubungkan autentikasi dan profil ke backend.
-- [ ] Mengimplementasikan personal/couple space beserta batas akses datanya.
-- [ ] Mengintegrasikan notifikasi dan pengingat pasangan.
-- [ ] Memvalidasi aksesibilitas, layout perangkat kecil, dan perilaku Android/iOS.
+- [ ] Finish creating, editing, and deleting reminders.
+- [ ] Save completion states and keep data between app sessions.
+- [ ] Implement recurring schedules, Routines progress, and daily celebrations.
+- [ ] Connect authentication and profiles to the backend.
+- [ ] Implement personal/couple spaces and their data access boundaries.
+- [ ] Add notifications and partner reminders.
+- [ ] Check accessibility, small-screen layouts, and Android/iOS behavior.
 
-Alongio juga punya konsep Little Kitchen, Money Garden, Heart Diary, Playroom, dan Buddy AI. Kartu fiturnya sudah masuk ke desain, sementara implementasi modulnya belum lengkap. Cakupan masing-masing fitur ada di [dokumen MVP](docs/mvp.md).
+Alongio also includes concepts for Little Kitchen, Money Garden, Heart Diary, Playroom, and Buddy AI. Their feature cards are part of the design, while the modules aren't fully implemented yet. Each feature's scope is covered in the [MVP document](docs/mvp.md).
 
-## Dokumentasi
+## Documentation
 
-- [Visi produk dan cakupan MVP](docs/mvp.md)
-- [Arah arsitektur proyek](docs/architecture.md)
-- [Galeri Home, Little Kitchen, Money Garden, dan profil](#satu-aplikasi-untuk-beberapa-bagian-keseharian)
-- [Preview desain Tiny Planner](docs/images/tiny-planner-design.png)
-- [Preview pemilihan penerima reminder](docs/images/reminder-recipient-design.png)
+- [Product vision and MVP scope](docs/mvp.md)
+- [Architecture direction](docs/architecture.md)
+- [Home, Little Kitchen, Money Garden, and profile gallery](#satu-aplikasi-untuk-beberapa-bagian-keseharian)
+- [Tiny Planner design preview](docs/images/tiny-planner-design.png)
+- [Reminder recipient selection preview](docs/images/reminder-recipient-design.png)
 
-File FigCraft yang bisa diedit disimpan lokal di `output/` dan tidak masuk ke repository publik. Preview PNG tetap bisa dilihat langsung di GitHub.
+The editable FigCraft file is stored locally in `output/` and isn't included in the public repository. The PNG previews are available directly on GitHub.
 
-## Pengembang
+## Developer
 
-Dibuat oleh [TioNovriadiPutra](https://github.com/TioNovriadiPutra) sebagai proyek personal untuk mengeksplorasi pengembangan produk mobile dan implementasi UI dengan React Native.
+Built by [TioNovriadiPutra](https://github.com/TioNovriadiPutra) as a personal project to explore mobile product development and UI implementation with React Native.
 
-Punya masukan soal pengalaman pengguna, interaksi, atau implementasi mobile? Diskusikan lewat [GitHub Issues](https://github.com/TioNovriadiPutra/alongio-app/issues).
+Have feedback on the user experience, interactions, or mobile implementation? Start a discussion through [GitHub Issues](https://github.com/TioNovriadiPutra/alongio-app/issues).
 
-Untuk ngobrol soal proyek ini atau peluang kolaborasi, hubungi saya lewat:
+For a chat about the project or a potential collaboration, reach me here:
 
 - Instagram: [@tio_novriadi](https://www.instagram.com/tio_novriadi/)
 - Email: [tionvriadi@gmail.com](mailto:tionvriadi@gmail.com)
 
-## Lisensi
+## License
 
-Repository ini menyertakan [MIT License](LICENSE). Ketentuan penggunaan dan atribusinya ada di file tersebut.
+This repository includes the [MIT License](LICENSE). See the file for usage terms and attribution.
